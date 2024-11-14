@@ -1,14 +1,3 @@
-// index.js
-console.log("Hello, Agile Backend!");
+// run `node index.js` in the terminal
 
-const express = require("express");
-const app = express();
-const PORT = process.env.PORT || 3000;
-
-app.get("/", (req, res) => {
-  res.send("Agile Backend - Deploy Test!");
-});
-
-app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
-});
+console.log(`Hello Node.js v${process.versions.node}!`);
